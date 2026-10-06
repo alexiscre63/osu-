@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  background: linear-gradient(160deg, #2b272d 0%, #1c191e 100%);
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.triangles {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -20%;
+  background: rgba(255, 255, 255, 0.04);
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  animation: rise linear infinite;
+}
+
+@keyframes rise {
+  to { transform: translateY(-140vh); }
+}
