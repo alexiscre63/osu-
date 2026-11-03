@@ -1,0 +1,64 @@
+    html {
+      min-height: 100%;
+      background: linear-gradient(160deg, #2b272d 0%, #1c191e 100%);
+    }
+
+    body {
+      position: relative;
+      isolation: isolate;
+      margin: 0;
+      min-height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+    }
+
+    .triangles {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .triangle {
+      position: absolute;
+      display: block;
+      width: var(--size);
+      height: calc(var(--size) * 0.87);
+      left: var(--x);
+      top: var(--y);
+      background: rgba(255, 255, 255, 0.04);
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    }
+
+    .triangle:nth-child(1)  { --size: 120px; --x: 4%;  --y: 8%; }
+    .triangle:nth-child(2)  { --size: 75px;  --x: 16%; --y: 65%; }
+    .triangle:nth-child(3)  { --size: 160px; --x: 27%; --y: 18%; }
+    .triangle:nth-child(4)  { --size: 95px;  --x: 37%; --y: 76%; }
+    .triangle:nth-child(5)  { --size: 130px; --x: 49%; --y: 45%; }
+    .triangle:nth-child(6)  { --size: 65px;  --x: 61%; --y: 12%; }
+    .triangle:nth-child(7)  { --size: 145px; --x: 73%; --y: 68%; }
+    .triangle:nth-child(8)  { --size: 100px; --x: 88%; --y: 22%; }
+    .triangle:nth-child(9)  { --size: 85px;  --x: 9%;  --y: 42%; }
+    .triangle:nth-child(10) { --size: 110px; --x: 23%; --y: 86%; }
+    .triangle:nth-child(11) { --size: 70px;  --x: 34%; --y: 48%; }
+    .triangle:nth-child(12) { --size: 150px; --x: 43%; --y: 4%; }
+    .triangle:nth-child(13) { --size: 90px;  --x: 57%; --y: 83%; }
+    .triangle:nth-child(14) { --size: 125px; --x: 67%; --y: 35%; }
+    .triangle:nth-child(15) { --size: 80px;  --x: 81%; --y: 88%; }
+    .triangle:nth-child(16) { --size: 140px; --x: 94%; --y: 55%; }
+    .triangle:nth-child(17) { --size: 105px; --x: 2%;  --y: 91%; }
+    .triangle:nth-child(18) { --size: 115px; --x: 54%; --y: 60%; }
+
+    video {
+      width: 50%;
+      height: auto;
+    }
+
+    .mod-icon {
+     width: 20px;
+     height:20px;
+    }
