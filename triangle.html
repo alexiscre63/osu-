@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>osu! — fond statique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      min-height: 100%;
+      background: linear-gradient(160deg, #2b272d 0%, #1c191e 100%);
+    }
+
+    body {
+      position: relative;
+      isolation: isolate;
+      margin: 0;
+      min-height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+    }
+
+    .triangles {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .triangle {
+      position: absolute;
+      display: block;
+      width: var(--size);
+      height: calc(var(--size) * 0.87);
+      left: var(--x);
+      top: var(--y);
+      background: rgba(255, 255, 255, 0.04);
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    }
+
+    .triangle:nth-child(1)  { --size: 120px; --x: 4%;  --y: 8%; }
+    .triangle:nth-child(2)  { --size: 75px;  --x: 16%; --y: 65%; }
+    .triangle:nth-child(3)  { --size: 160px; --x: 27%; --y: 18%; }
+    .triangle:nth-child(4)  { --size: 95px;  --x: 37%; --y: 76%; }
+    .triangle:nth-child(5)  { --size: 130px; --x: 49%; --y: 45%; }
+    .triangle:nth-child(6)  { --size: 65px;  --x: 61%; --y: 12%; }
+    .triangle:nth-child(7)  { --size: 145px; --x: 73%; --y: 68%; }
+    .triangle:nth-child(8)  { --size: 100px; --x: 88%; --y: 22%; }
+    .triangle:nth-child(9)  { --size: 85px;  --x: 9%;  --y: 42%; }
+    .triangle:nth-child(10) { --size: 110px; --x: 23%; --y: 86%; }
+    .triangle:nth-child(11) { --size: 70px;  --x: 34%; --y: 48%; }
+    .triangle:nth-child(12) { --size: 150px; --x: 43%; --y: 4%; }
+    .triangle:nth-child(13) { --size: 90px;  --x: 57%; --y: 83%; }
+    .triangle:nth-child(14) { --size: 125px; --x: 67%; --y: 35%; }
+    .triangle:nth-child(15) { --size: 80px;  --x: 81%; --y: 88%; }
+    .triangle:nth-child(16) { --size: 140px; --x: 94%; --y: 55%; }
+    .triangle:nth-child(17) { --size: 105px; --x: 2%;  --y: 91%; }
+    .triangle:nth-child(18) { --size: 115px; --x: 54%; --y: 60%; }
+
+    video {
+      width: 50%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="triangles" aria-hidden="true">
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+    <span class="triangle"></span><span class="triangle"></span>
+  </div>
+
+  <h1>Welcome to osu!</h1>
+  Osu! est un jeu de rythme free-to-play développé et publié par le développeur australien Dean "peppy" Herbert. Le jeu est basé sur le gameplay de la série de jeux vidéo Osu! Tatakae! Ouendan, qui a été initialement publié pour la Nintendo DS. Le jeu est disponible sur Microsoft Windows, macOS, Linux, iOS et Android.<br>
+  <h3>Sommaire</h3>
+  <ul>
+    <li>Gameplay</li>
+    <li>Classements</li>
+    <li>Mon profil</li>
+    <li>Avis personnels</li>
+  </ul>
+  <h3>Gameplay</h3>
+
+  <strong>Osu classic</strong><br>
+  Le gameplay d'osu! est basé sur le rythme et la précision. Les joueurs doivent cliquer sur des cercles, suivre des sliders et tourner des spinners en synchronisation avec la musique. Le jeu propose différents modes de jeu, chacun ayant ses propres mécaniques et défis. Les joueurs peuvent également créer et partager leurs propres beatmaps, ce qui contribue à la diversité du contenu disponible.<br>
+  Le jeu nous propose un tutoriel afin de nous apprendre les différentes mécaniques du jeu. Il est possible de répéter ce tutoriel autant de fois que les joueurs le souhaitent afin d'être habile avec les différentes mécaniques.<br>
+  Les différentes mécaniques sont les suivantes :
+  <ul>
+    <li>Cercles basiques : Cette mécanique consiste à rencontrer des cercles qui apparaissent sur la zone de jeu en synchronisation avec la musique.</li>
+    <li>Sliders : Les sliders sont des lignes qui doivent être suivies en cliquant et maintenant le bouton de la souris enfoncé.</li>
+    <li>Spinners : Les spinners consistent à faire tourner la souris tout en maintenant la touche configurée pour appuyer sur les cercles.</li>
+  </ul>
+  <video controls autoplay muted loop>
+    <source src="ordr-video.mp4" type="video/mp4">
+  </video><br>
+
+  <strong>Osu!mania</strong><br>
+  Osu!mania est un mode de jeu utilisant uniquement le clavier. Il est basé sur le gameplay de jeux de rythme tels que Guitar Hero et Piano Tiles (sur mobile). Les joueurs doivent appuyer sur les touches correspondantes aux notes qui descendent à l'écran en synchronisation avec la musique. Osu!mania propose différents niveaux de difficulté et permet aux joueurs de personnaliser leur expérience en choisissant parmi une variété de skins et de dispositions de touches.<br>
+  Les différentes mécaniques sont les suivantes :
+  <ul>
+    <li>Les touches courtes : elles ont la même mécanique que les cercles basiques dans osu! classic : il faut appuyer en rythme avec la musique.</li>
+  </ul>
+</body>
+</html>

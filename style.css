@@ -1,13 +1,12 @@
 html {
-  height: 100%;
+  min-height: 100%;
   background: linear-gradient(160deg, #2b272d 0%, #1c191e 100%);
 }
 
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
   background: transparent;
-  overflow: hidden;
   font-family: "Montserrat", sans-serif;
   color: white;
 }
@@ -28,4 +27,9 @@ body {
 
 @keyframes rise {
   to { transform: translateY(-140vh); }
+}
+
+video{
+  width: 50%;
+  height: auto;
 }
